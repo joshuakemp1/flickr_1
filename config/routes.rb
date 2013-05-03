@@ -9,6 +9,8 @@ Practice1::Application.routes.draw do
 
   get "pages/services"
 
+  get "pages/portfolio"
+
   get "pages/fees"
 
   get "contacts/new"
