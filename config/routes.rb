@@ -3,17 +3,14 @@ Practice1::Application.routes.draw do
 
  root :to => 'pages#home' 
 
-  get "pages/home"
+ match '/home', to: 'pages#home'
+ match '/about', to: 'pages#about'
+ match '/services', to: 'pages#services'
+ match '/portfolio', to: 'pages#portfolio'
+ match '/fees', to:   'pages#fees'
+ match '/contacts', to: 'contacts#new'
 
-  get "pages/about"
 
-  get "pages/services"
-
-  get "pages/portfolio"
-
-  get "pages/fees"
-
-  get "contacts/new"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
