@@ -20,6 +20,8 @@ gem "flickraw", "~> 0.9.6"
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
+  gem "better_errors", "~> 0.8.0"
+  gem "binding_of_caller", "~> 0.7.1"
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
