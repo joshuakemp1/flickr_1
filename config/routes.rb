@@ -1,7 +1,7 @@
 Practice1::Application.routes.draw do
   resources :contacts
 
- root :to => 'pages#home' 
+ root :to => 'contacts#new' 
 
  match '/home', to: 'pages#home'
  match '/about', to: 'pages#about'
