@@ -22,7 +22,7 @@ end
         # info = flickr.photos.getInfo(:photo_id => "8702627447")
         # @photo = FlickRaw.url_photostream(info)
 
-        # getPhotos = flickr.photosets.getPhotos(:photo_set => "72157633406435974")
+         #getPhotos = flickr.photosets.getPhotos(:photo_set => "72157633406435974")
         # FlickRaw.url_photosets(getPhotos)  # => "http://www.flickr.com/photos/95255902@N05/sets/72157633406435974/"
     end
 
