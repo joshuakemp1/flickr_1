@@ -8,6 +8,7 @@ $grayMediumLight: #eaeaea;
 $tigerOrange: #e36b23;
 $mutedWhite: #999999;
 $darkGrayish: #2a333c;
+$bluey:  #6489b9;
 
 /* universal */
 
@@ -28,6 +29,10 @@ textarea {
   resize: vertical;
 }
 
+div.container {
+
+  text-align: center;
+}
 
  img {
    text-align: center;
