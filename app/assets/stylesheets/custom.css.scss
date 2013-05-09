@@ -104,19 +104,24 @@ p {
 
 /* footer */
 
-footer {
-
-  margin-right: 7px;
+footer { 
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid black;
+  border-top: 1px solid $tigerOrange;
   color: $grayLight;
   a {
     color: $tigerOrange;
     &:hover { 
       color: $mutedWhite;
+      text-decoration: none;
     }
   }  
+
+  div.footer-container{
+    float: right;
+    margin-right: 10px;
+  }
+
   small { 
     float: left; 
   }
