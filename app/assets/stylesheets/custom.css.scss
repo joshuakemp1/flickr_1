@@ -29,26 +29,17 @@ textarea {
   resize: vertical;
 }
 
-div.container {
-
-  text-align: center;
-}
 
 label {
   color:$tigerOrange;
 }
 
- img {
+ div.photo-align {
    text-align: center;
 }
 
 
-.center {
-  text-align: center;
-  h1 {
-    margin-bottom: 10px;
-  }
-}
+
 
 /* typography */
 
@@ -74,6 +65,7 @@ h2 {
 }
 
 p {
+
   font-size: 1.2em;
   line-height: 1.7em;
   color: $mutedWhite;
@@ -82,18 +74,28 @@ p {
 
 /* header */
 
+#logo-nav {
+
+ 
+  color: $tigerOrange;
+  &:hover {
+  color: $mutedWhite;
+  text-decoration: none;
+}
+}
+
 #logo {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: $mutedWhite;
+  color: $tigerOrange;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
   &:hover {
-    color: $tigerOrange;
+    color: $mutedWhite;
     text-decoration: none;
   }
 }
@@ -103,6 +105,8 @@ p {
 /* footer */
 
 footer {
+
+  margin-right: 7px;
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid black;
