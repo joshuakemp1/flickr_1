@@ -1,8 +1,13 @@
+
+
 @import "bootstrap";
 
 /* mixins, variables, etc. */
 
 $grayMediumLight: #eaeaea;
+$tigerOrange: #e36b23;
+$mutedWhite: #999999;
+$darkGrayish: #2a333c;
 
 /* universal */
 
@@ -12,6 +17,7 @@ html {
 
 body {
   padding-top: 60px;
+  background-color: $darkGrayish;
 }
 
 section {
@@ -21,6 +27,12 @@ section {
 textarea {
   resize: vertical;
 }
+
+
+ img {
+   text-align: center;
+}
+
 
 .center {
   text-align: center;
@@ -40,6 +52,7 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
+  color: $tigerOrange;
 }
 
 h2 {
@@ -54,6 +67,7 @@ h2 {
 p {
   font-size: 1.1em;
   line-height: 1.7em;
+  color: $mutedWhite;
 }
 
 
@@ -63,29 +77,31 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: white;
+  color: $mutedWhite;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
   &:hover {
-    color: white;
+    color: $tigerOrange;
     text-decoration: none;
   }
 }
+
+
 
 /* footer */
 
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid $grayMediumLight;
+  border-top: 25px solid black;
   color: $grayLight;
   a {
-    color: $gray;
+    color: $tigerOrange;
     &:hover { 
-      color: $grayDarker;
+      color: $mutedWhite;
     }
   }  
   small { 
