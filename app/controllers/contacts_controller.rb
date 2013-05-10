@@ -21,18 +21,20 @@ class ContactsController < ApplicationController
     end
   end
 
-  
  
 
   # POST /contacts
   # POST /contacts.json
   def create
     @contact = Contact.new(params[:contact])
-
+    
     respond_to do |format|
       if @contact.save
+       
+        
         format.html { redirect_to @contact, notice: 'Wellspring service request sent! We will be in touch soon!' }
         format.json { render json: @contact, status: :created, location: @contact }
+        ContactMailer.service_request(@contact).deliver
       else
         format.html { render action: "new" }
         format.json { render json: @contact.errors, status: :unprocessable_entity }
