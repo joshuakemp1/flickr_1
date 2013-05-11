@@ -10,11 +10,7 @@
 # Ignore the default SQLite database.
 /db/*.sqlite3
 
-#ignore mail configuration
-/config/enviroments
 
-#ignore flick key settings
-/app/controllers/pages_controller.rb
 
 # Ignore all logfiles and tempfiles.
 /log/*.log
