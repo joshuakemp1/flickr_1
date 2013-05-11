@@ -43,7 +43,7 @@ Practice1::Application.configure do
   domain: "asciicasts.com",
   authentication: "plain",
   enable_starttls_auto: true,
-  user_name: "joshuakemp85@gmail.com",
-  password: "sampson01"
+  user_name: "wellspringlawnandlandscape@gmail.com",
+  password: "wellspring"
 }
 end
