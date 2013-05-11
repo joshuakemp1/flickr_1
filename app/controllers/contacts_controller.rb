@@ -30,8 +30,6 @@ class ContactsController < ApplicationController
     
     respond_to do |format|
 
-      if @contact.valid 
-
         @contact.save
        
         
