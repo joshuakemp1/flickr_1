@@ -30,7 +30,7 @@ class ContactsController < ApplicationController
     
     respond_to do |format|
 
-        @contact.save
+      if @contact.save
        
         
         format.html { redirect_to @contact, notice: 'Wellspring service request sent! We will be in touch soon!' }
