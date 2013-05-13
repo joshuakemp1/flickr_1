@@ -14,9 +14,10 @@
      <header class="navbar navbar-fixed-top navbar-inverse">
       <div class="navbar-inner">
         <div class="container">
-          <%= link_to image_tag("wellspringlogo.jpg", :border=>0, :class => 'dock-item'),:action => 'home', :controller => 'pages'%>
           <nav>
-            <ul class="nav pull-right">
+            <ul class="nav pull-left"></ul>
+            <%=image_tag"wellspringlogo2.jpg", id: "logo-top" %>
+            <ul class="nav pull-right"> 
             <li><%= link_to "Home", '/home', id: "logo-nav" %></li>
             <li><%= link_to "About", '/about', id: "logo-nav" %></li>
             <li><%= link_to "Services", '/services', id: "logo-nav" %></li>
@@ -24,6 +25,7 @@
             <li><%= link_to "Fees", '/fees', id: "logo-nav" %></li>
             <li><%= link_to "Contact", '/contacts/new', id: "logo-nav" %></li>
             </ul>
+          </ul>
           </nav>
         </div>
       </div>
@@ -31,9 +33,6 @@
     <div class="container">
       <%= yield %>
     </div>
-   <div class="img">
-    
-</div>
     <footer class="footer">
     <div class="footer-container">
   <nav>
@@ -44,11 +43,12 @@
        <li><%= link_to "Portfolio", '/portfolio' %></li>
        <li><%= link_to "Fees", '/fees' %></li>
        <li><%= link_to "Contact", '/contacts/new' %></li>
+
     </ul>
   </nav>
-</div>
-</footer>
-  </body>
+    </div>
+  </footer>
+ </body>
 </html>
   
 
