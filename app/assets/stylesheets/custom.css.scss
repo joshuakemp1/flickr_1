@@ -86,9 +86,16 @@ div.notify_me {
 
 /* header */
 
-#logo-top {
-  float: left;
-  text-align: left;
+#logo_please {
+  
+ 
+
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  border-radius: 20px;
+
+ 
 }
 
 #logo-nav {

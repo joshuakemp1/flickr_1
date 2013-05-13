@@ -10,13 +10,14 @@
     <![endif]-->
 </head>
 <body>
-
+  
+    
      <header class="navbar navbar-fixed-top navbar-inverse">
+      <%=image_tag"wellspringlogo_cropped.jpg", id: "logo_please" %>
       <div class="navbar-inner">
+       
         <div class="container">
           <nav>
-            <ul class="nav pull-left"></ul>
-            <%=image_tag"wellspringlogo2.jpg", id: "logo-top" %>
             <ul class="nav pull-right"> 
             <li><%= link_to "Home", '/home', id: "logo-nav" %></li>
             <li><%= link_to "About", '/about', id: "logo-nav" %></li>
@@ -24,6 +25,7 @@
             <li><%= link_to "Portfolio", '/portfolio', id: "logo-nav" %></li>
             <li><%= link_to "Fees", '/fees', id: "logo-nav" %></li>
             <li><%= link_to "Contact", '/contacts/new', id: "logo-nav" %></li>
+
             </ul>
           </ul>
           </nav>
