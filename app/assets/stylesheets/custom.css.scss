@@ -4,6 +4,7 @@
 
 /* mixins, variables, etc. */
 
+
 $grayMediumLight: #eaeaea;
 $tigerOrange: #e36b23;
 $mutedWhite: #999999;
@@ -17,6 +18,7 @@ html {
 }
 
 body {
+  
   padding-top: 60px;
   background-color: $darkGrayish;
 }
@@ -35,8 +37,9 @@ label {
 }
 
  div.photo-align {
-   text-align: center;
-}
+  text-align: center;
+
+   }
 
 
 
@@ -86,21 +89,27 @@ div.notify_me {
 
 /* header */
 
-#logo_please {
-  
- 
 
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  border-radius: 20px;
+
+
+div.navbar-inner {
+  
+
+
+ }
+#logo_please{
+  margin-left: 367px;
+  margin-top: 20px; 
+  border-radius: 10px;
+
+
 
  
 }
 
 #logo-nav {
 
- 
+  position: static;
   color: $tigerOrange;
   &:hover {
   color: $mutedWhite;
