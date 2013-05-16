@@ -73,7 +73,14 @@ p {
   font-size: 1.2em;
   line-height: 1.7em;
   color: $mutedWhite;
-
+ 
+}
+li {
+  color:$mutedWhite;
+  
+}
+ul {
+color:$mutedWhite;
 }
 div.notify_me {
   p {
@@ -133,6 +140,19 @@ div.navbar-inner {
   }
 }
 
+/* about page text */
+
+div.about_text {
+  margin-right: 100px;
+  margin-left: 100px;
+  font-size: 1.2em;
+  line-height: 1.7em;
+  color: $mutedWhite;
+   &:hover {
+  color: $tigerOrange;
+}
+}
+
 
 
 /* footer */
@@ -160,11 +180,12 @@ footer {
     float: left; 
   }
   ul {
+
     float: right;
     list-style: none;
     li {
       float: left;
-      margin-left: 10px;
+      
     }
   }
 }

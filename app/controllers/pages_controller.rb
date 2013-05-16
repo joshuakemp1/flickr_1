@@ -45,6 +45,5 @@ class PagesController < ApplicationController
     snagging_images
   end
 
-  def fees
-  end
+  
 end

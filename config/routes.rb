@@ -7,7 +7,6 @@ Practice1::Application.routes.draw do
  match '/about', to: 'pages#about'
  match '/services', to: 'pages#services'
  match '/portfolio', to: 'pages#portfolio'
- match '/fees', to:   'pages#fees'
  match '/contacts', to: 'contacts#new'
 
 

@@ -16,9 +16,6 @@ class PagesControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should get fees" do
-    get :fees
-    assert_response :success
-  end
+  
 
 end
