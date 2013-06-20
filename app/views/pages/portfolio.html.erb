@@ -3,7 +3,7 @@
 <div class="photo-align">
 <% i = 0 %>
 
-<%  while i < @length do %>
+<%  until i == @length do %>
 <%= image_tag(@photo[i], :alt => @photo)%>
 <%  i +=1 end %>
 </div>

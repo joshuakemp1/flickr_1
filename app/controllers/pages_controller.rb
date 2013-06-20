@@ -17,7 +17,7 @@ class PagesController < ApplicationController
       @photo = []
       list = flickr.photos.search(:user_id => '95255902@N05')
       @length = list.length
-    while i < @length do
+    until i >=  @length do
       info = flickr.photos.getInfo(:photo_id => list[i].id)
       @photo[i] = FlickRaw.url_b(info)
       i +=1
