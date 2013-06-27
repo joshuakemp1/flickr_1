@@ -16,7 +16,7 @@ def services
 end
 
 def portfolio
-  snagging_images
+  @portfolio = Portfolio.all 
 end
 
   

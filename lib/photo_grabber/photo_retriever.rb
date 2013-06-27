@@ -16,8 +16,10 @@ FLICKR_USER_ID = ENV['FLICKR_ID']
         title = info.title
         taken = info.dates.taken
         square_url = FlickRaw.url_s(info)
+        original_url = FlickRaw.url_o(info)
 
-        Portfolio.where(title: title, url: square_url, taken: taken).first_or_create!
+
+        Portfolio.where(title: title, url: square_url, taken: taken, url_large: original_url).first_or_create!
 
   end
 

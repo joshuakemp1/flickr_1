@@ -1,10 +1,6 @@
-<br></br>
-<h1>Recent Work!</h1>
-<div class="photo-align">
-<% i = 0 %>
+<%= @portfolio.each do |p| %>
+<%= image_tag(p.url_large, :size => "480x480") %>
+<%= p.title %>
 
-<%  until i == @length do %>
-<%= image_tag(@photo[i], :alt => @photo)%>
-<%  i +=1 end %>
-</div>
 
+<% end %>

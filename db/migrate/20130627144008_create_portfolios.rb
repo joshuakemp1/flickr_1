@@ -4,6 +4,7 @@ class CreatePortfolios < ActiveRecord::Migration
       t.string :title
       t.text :url
       t.text :taken
+      t.text :url_large
 
       t.timestamps
     end

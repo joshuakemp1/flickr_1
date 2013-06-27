@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(:version => 20130627144008) do
     t.string   "title"
     t.text     "url"
     t.text     "taken"
+    t.text     "url_large"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
