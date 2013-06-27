@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
 
-include Photo::PhotoRetriever
+include PhotoGrabber::PhotoRetriever
  
 def home
 
