@@ -17,7 +17,7 @@ def services
 end
 
 def portfolio
-  @portfolio = Portfolio.all 
+  @portfolio = Portfolio.portfolio_photos
 end
 
   

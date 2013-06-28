@@ -4,8 +4,8 @@
 
 /* general styles */
 body {
-	background:url("/assets/type.png") top left repeat;
-	font: 11px/17px "OpenSansRegular", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background:#333;
+	font: 12px "OpenSansRegular", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #909090 /* 656565 */;
 }
 
@@ -132,7 +132,7 @@ a.img-overlay {
 	padding:30px 20px 29px;
 	display: block;
 	font-family: 'OpenSansBold';
-	font-size: 12px;
+	font-size: 1.3em;
 	color: #3a3a3a;
 	text-transform: uppercase;
 	position: relative;
@@ -163,7 +163,7 @@ a.img-overlay {
 .navigation ul li a span {
 	display: block;
 	font-family: 'OpenSansItalic';
-	font-size: 11px;
+	font-size: 0.875em;
 	color: #aeaeae;
 	text-transform: none;
 }
@@ -931,65 +931,55 @@ thead th{
 	width: 165px;
 }
 
+.services {
+	width:220px;
+	height:220px;
+}
+
 #hedges {
 	background:url(/assets/gardenicon.svg);
 	background-position:-764px -272px;
-	width:220px;
-	height:220px;
+	
 }
 
 #tree {
 	background:url(/assets/gardenicon.svg);
 	background-position:-508px -272px;
-	width:220px;
-	height:220px;
-
+	
 }
 
 #storm{
 	background:url(/assets/gardenicon.svg);
 	background-position:-514px -770px;
-	width:220px;
-	height:220px;
-
+	
 }
 
 #irrigation {
 	background:url(/assets/gardenicon.svg);
 	background-position:-268px -273px;
-	width:220px;
-	height:220px;
 
 }
 
 #landscaping{
 	background:url(/assets/gardenicon.svg);
 	background-position:-15px -24px;
-	width:220px;
-	height:220px;
-
+	
 }
 
 #mulching {
 	background:url(/assets/gardenicon.svg);
 	background-position:-262px -17px;
-	width:220px;
-	height:220px;
-
+	
 }
 
 #aerating {
   background:url(/assets/gardenicon.svg);
 	background-position:-512px -524px;
-	width:220px;
-	height:220px;
 }
 
 #walls{
 	background:url(/assets/gardenicon.svg);
 	background-position:-16px -268px;
-	width:220px;
-	height:220px;
 }
 
 .recent-posts {
@@ -1062,41 +1052,7 @@ h3.front-page { margin-top: -11px; }
 	cursor: pointer;
 	padding: 0 15px 0 14px;
 }
-.our-team {
-	position: relative;
-}
-.our-team .social {
-	position: absolute;
-	top: 264px;
-	left: 6px;
-	background: rgba(0,0,0,0.2);
-	padding: 5px 10px 5px 5px;
-	opacity: 0;
-	transition: opacity 0.2s;
-}
-.our-team:hover .social {
-	opacity: 1;
-}
-.our-team > img {
-	width: 288px;
-	display: block;
-	border: 1px solid rgba(0,0,0,0.1);
-	padding: 5px;
-}
-.our-team span {
-	padding: 15px 0;
-	display: block;
-	border-bottom: 1px solid rgba(0,0,0,0.1);
-	margin-bottom: 15px;
-}
-.our-team span strong {
-	display: block;
-	color: #3a3a3a;
-}
-.our-team p {
-	border-bottom: 1px solid rgba(0,0,0,0.1);
-	padding-bottom: 15px;
-}
+
 
 .page-content { margin-top: 20px; }
 .page-content .img-float-left, .page-content .img-float-right {
