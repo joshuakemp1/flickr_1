@@ -15,30 +15,11 @@
 		
 		<div id="page-content" class="full-width container">
 		
-			<div class="twelve columns">
+			<div class="sixteen columns">
 			
 			<!-- Google Maps -->
 			<div id="googlemaps" class="google-map google-map-full" style="height:300px"></div>
 
-			<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-			<script src="js/jquery.gmap.min.js"></script>
-		
-				<script type="text/javascript">
-					jQuery('#googlemaps').gMap({
-						maptype: 'ROADMAP',
-						scrollwheel: false,
-						zoom: 13,
-						markers: [
-							{
-								address: 'New York, United States', // Your Adress Here
-								html: '',
-								popup: false,
-							}
-
-						],
-						
-					});
-				</script>
 				
 				<h3 class="gmap-header">Leave us a message</h3>
 				
@@ -53,45 +34,45 @@
 				</div>
 
 			</div>
-			<div id="sidebar" class="four columns">
-				<div class="sidebar-widget">
-					<h3>Blog Categories</h3>
-					<ul class="blog-categories">
-						<li><a href="#">Photography</a></li>
-						<li><a href="#">Web Developement</a></li>
-						<li><a href="#">Typography</a></li>
-						<li><a href="#">Best Practices in Design</a></li>
-						<li><a href="#">Responsive Design</a></li>
-						<li><a href="#">Inspiration</a></li>
-					</ul>
-				</div>
-				<div class="sidebar-widget">
-					<h3>Text Info</h3>
-					<p>I never spend much time in school but I taught ladies plenty. It's true I hire my body out for pay, hey hey. I've gotten burned over Cheryl Tiegs, blown up for Raquel Welch.</p>
-				</div>
-				<div class="sidebar-widget">
-					<h3>Popular Posts</h3>
-					<ul class="popular-posts">
-						<li>
-							<a class="pp-image" href="#"><img alt="" src="images/imgs/blog_small/blog-small01.jpg" /></a>
-							<p><a href="#">Too much time in school</a></p>
-							<span>Posted on May 15, 2012</span>
-						</li>
-						<li>
-							<a class="pp-image" href="#"><img alt="" src="images/imgs/blog_small/blog-small02.jpg" /></a>
-							<p><a href="#">Too much time in school</a></p>
-							<span>Posted on May 15, 2012</span>
-						</li>
-						<li>
-							<a class="pp-image" href="#"><img alt="" src="images/imgs/blog_small/blog-small03.jpg" /></a>
-							<p><a href="#">Too much time in school</a></p>
-							<span>Posted on May 15, 2012</span>
-						</li>
-					</ul>
-				</div>
-			</div>
+			
 
 		</div>
 		
 	</div>
+
+<script type="text/javascript"
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApUO4ajt4kh5KnLE-zJbdmDKrVf7zqsvA&sensor=false">
+    </script>
+
+ <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(38.327347,-77.584454),
+          zoom: 10,
+          scrollwheel: false,
+          draggable: false,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+
+        var map = new google.maps.Map(document.getElementById("googlemaps"),
+            mapOptions);
+
+        var marker = new google.maps.Marker({
+          position: map.getCenter(),
+          map: map,
+          title: 'Newbridges Care'
+        });
+
+        var center;
+        function calculateCenter() {
+         center = map.getCenter();
+        }
+         google.maps.event.addDomListener(map, 'idle', function() {
+         calculateCenter();
+        });
+         google.maps.event.addDomListener(window, 'resize', function() {
+         map.setCenter(center);
+        });
+       }
+         </script>
 

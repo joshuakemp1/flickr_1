@@ -42,9 +42,7 @@ ul.tabs-nav li.active a {
 	border-top: 2px solid #80b600;
 }
 .pagination li a:hover,
-.home-blog a.img-overlay {
-	border-bottom: 1px solid #80b600;
-}
+
 .home-blog .home-post-type {
 	background: #80b600 url(../../images/home-post-type.png) no-repeat;
 }

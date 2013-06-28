@@ -9,16 +9,13 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
-  gem 'bootstrap-sass'
 end
 
 gem 'jquery-rails'
 gem "flickraw", "~> 0.9.6"
 
 #gem to allow running on ubuntu server
-#gem 'therubyracer'
+gem 'therubyracer'
 
-#paperclip
-#gem "paperclip", "~> 3.0"
-#gem 'rmagick'
+
 
