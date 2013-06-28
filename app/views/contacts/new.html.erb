@@ -1,5 +1,97 @@
-<h1>Schedule An Estimate</h1>
+<div class="container main">
+		<div id="slogan" class="clearfix">
+			<div class="sixteen columns">
+				<div class="slogan">
+					<p>If you have <span class="color">any questions</span> <span class="light_gray">don't <br />hesitate</span> to use the form below!</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="sixteen columns">
+				<hr class="line slogan" />
+			</div>
+		</div>
+		
+		<div id="page-content" class="full-width container">
+		
+			<div class="twelve columns">
+			
+			<!-- Google Maps -->
+			<div id="googlemaps" class="google-map google-map-full" style="height:300px"></div>
 
-<%= render 'form' %>
+			<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+			<script src="js/jquery.gmap.min.js"></script>
+		
+				<script type="text/javascript">
+					jQuery('#googlemaps').gMap({
+						maptype: 'ROADMAP',
+						scrollwheel: false,
+						zoom: 13,
+						markers: [
+							{
+								address: 'New York, United States', // Your Adress Here
+								html: '',
+								popup: false,
+							}
 
+						],
+						
+					});
+				</script>
+				
+				<h3 class="gmap-header">Leave us a message</h3>
+				
+				<div id="contact-form">
+					<form class="contact-form">
+						<p><label for="name">Name (required)</label><input type="text" name="name" id="name"></p>
+						<p><label for="email">Email (required)</label><input type="text" name="email" id="email"></p>
+						<p style="margin-right:0;"><label for="website">Website (optional)</label><input type="text" name="website" id="website"></p>
+						<p style="margin-right:0;"><label for="textarea">Message (required)</label><textarea rows="10" cols="55" name="message" id="textarea"></textarea></p>
+						<p style="float:right; margin-right:0;"><input class="submit" type="submit" value="Send Mail"></p>
+					</form>
+				</div>
+
+			</div>
+			<div id="sidebar" class="four columns">
+				<div class="sidebar-widget">
+					<h3>Blog Categories</h3>
+					<ul class="blog-categories">
+						<li><a href="#">Photography</a></li>
+						<li><a href="#">Web Developement</a></li>
+						<li><a href="#">Typography</a></li>
+						<li><a href="#">Best Practices in Design</a></li>
+						<li><a href="#">Responsive Design</a></li>
+						<li><a href="#">Inspiration</a></li>
+					</ul>
+				</div>
+				<div class="sidebar-widget">
+					<h3>Text Info</h3>
+					<p>I never spend much time in school but I taught ladies plenty. It's true I hire my body out for pay, hey hey. I've gotten burned over Cheryl Tiegs, blown up for Raquel Welch.</p>
+				</div>
+				<div class="sidebar-widget">
+					<h3>Popular Posts</h3>
+					<ul class="popular-posts">
+						<li>
+							<a class="pp-image" href="#"><img alt="" src="images/imgs/blog_small/blog-small01.jpg" /></a>
+							<p><a href="#">Too much time in school</a></p>
+							<span>Posted on May 15, 2012</span>
+						</li>
+						<li>
+							<a class="pp-image" href="#"><img alt="" src="images/imgs/blog_small/blog-small02.jpg" /></a>
+							<p><a href="#">Too much time in school</a></p>
+							<span>Posted on May 15, 2012</span>
+						</li>
+						<li>
+							<a class="pp-image" href="#"><img alt="" src="images/imgs/blog_small/blog-small03.jpg" /></a>
+							<p><a href="#">Too much time in school</a></p>
+							<span>Posted on May 15, 2012</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		
+	</div>
 
