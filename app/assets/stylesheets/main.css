@@ -931,6 +931,67 @@ thead th{
 	width: 165px;
 }
 
+#hedges {
+	background:url(/assets/gardenicon.svg);
+	background-position:-764px -272px;
+	width:220px;
+	height:220px;
+}
+
+#tree {
+	background:url(/assets/gardenicon.svg);
+	background-position:-508px -272px;
+	width:220px;
+	height:220px;
+
+}
+
+#storm{
+	background:url(/assets/gardenicon.svg);
+	background-position:-514px -770px;
+	width:220px;
+	height:220px;
+
+}
+
+#irrigation {
+	background:url(/assets/gardenicon.svg);
+	background-position:-268px -273px;
+	width:220px;
+	height:220px;
+
+}
+
+#landscaping{
+	background:url(/assets/gardenicon.svg);
+	background-position:-15px -24px;
+	width:220px;
+	height:220px;
+
+}
+
+#mulching {
+	background:url(/assets/gardenicon.svg);
+	background-position:-262px -17px;
+	width:220px;
+	height:220px;
+
+}
+
+#aerating {
+  background:url(/assets/gardenicon.svg);
+	background-position:-512px -524px;
+	width:220px;
+	height:220px;
+}
+
+#walls{
+	background:url(/assets/gardenicon.svg);
+	background-position:-16px -268px;
+	width:220px;
+	height:220px;
+}
+
 .recent-posts {
 	overflow: hidden;
 }

@@ -4,6 +4,7 @@ include PhotoGrabber::PhotoRetriever
  
 def home
 
+@latest = Portfolio.last_three_photos
 end
 
 def about

@@ -14,7 +14,7 @@
 					<div class="flexslider">
 						<ul class="slides">
 							<li>
-								<img src="/assets/slide02.jpg" />
+								<img src="/assets/banner1.jpg" />
 								<div class="slide-caption">
 									<h3>I never spend much time</h3>
 									<p>In school but I taught ladies plenty. It's true I hire my body out for pay, hey hey. I've gotten burned over Cheryl Tiegs, blown up for Raquel Welch. But when I end up in the hay it's only hay, hey hey.</p>
@@ -22,7 +22,7 @@
 								</div>
 							</li>
 							<li>
-								<img src="/assets/slide02.jpg" />
+								<img src="/assets/banner1.jpg" />
 								<div class="slide-caption">
 									<h3>I never spend much time</h3>
 									<p>In school but I taught ladies plenty. It's true I hire my body out for pay, hey hey. I've gotten burned over Cheryl Tiegs, blown up for Raquel Welch. But when I end up in the hay it's only hay, hey hey.</p>
@@ -40,33 +40,20 @@
 					<p>Please take some time to view some of our more recent projects and don’t hesitate to call or email with all of your Lawn and Landscaping Needs.</p>
 					<button class="button">View Portfolio</button>
 				</div>
+				<% @latest.each do |l| %>
 				<div class="four columns">
 					<div class="our-work">
 						<a class="img-overlay" href="#">
-							<img src="images/imgs/work_big/work01.jpg" />
+							<%= image_tag(l.url_large, :size => "220x220") %>
+							<!--<img src="images/imgs/work_big/work01.jpg" />-->
 							<div class="img-overlay-div"></div>
 						</a>
-						<h3><a href="#">Ten years ago</a><span>a crack commando</span></h3>
+						<h3><%= truncate(l.title, :length => 20) %></h3>
 					</div>
 				</div>
-				<div class="four columns">
-					<div class="our-work">
-						<a class="img-overlay" href="#">
-							<img src="images/imgs/work_big/work02.jpg" />
-							<div class="img-overlay-div"></div>
-						</a>
-						<h3><a href="#">Just the good ol' boys</a><span>Just the good ol' boys</span></h3>
-					</div>
-				</div>
-				<div class="four columns">
-					<div class="our-work">
-						<a class="img-overlay" href="#">
-							<img src="images/imgs/work_big/work03.jpg" />
-							<div class="img-overlay-div"></div>
-						</a>
-						<h3><a href="#">Makin' their way</a><span>the only way</span></h3>
-					</div>
-				</div>
+				<% end %>
+				
+				
 			</div>
 			
 			<div class="container">
@@ -79,32 +66,32 @@
 				
 				<div class="four columns">
 					<div class="home-blog">
-						<img src="images/imgs/home_blog/home-blog01.jpg" />
+						<img id="hedges"/>
 							
 						<div class="home-blog-post">
-							<h3><a href="#">Trimming of hedges and shrubs</a></h3>
-							<p>I never spend much time in school but I taught ladies plenty. It's true I hire my body out for pay, hey hey. I've gotten.</p>
+							<h3><a href="#">Hedges and Shrubs</a></h3>
+							<p>We trim hedges and shrubs of all sizes.We have the tools to ensure</p>
 						</div>
 					</div>
 				</div>
 
 				<div class="four columns">
 					<div class="home-blog">
-						<img src="images/imgs/home_blog/home-blog04.jpg" />
+						<img id="landscaping" />
 				
 						<div class="home-blog-post">
-							<h3><a href="#">Design and installs of new Landscaping</a></h3>
-							<p>I never spend much time in school but I taught ladies plenty. It's true I hire my body out for pay, hey hey. I've gotten.</p>
+							<h3><a href="#">New Landscaping</a></h3>
+							<p>We can design and install your new landscapes, adding the personal touches that you require.</p>
 						</div>
 					</div>
 				</div>
 
 				<div class="four columns">
 					<div class="home-blog">
-						<img src="images/imgs/home_blog/home-blog02.jpg" />
+						<img id="walls" />
 							
 						<div class="home-blog-post">
-							<h3><a href="#">Design and build of retaining walls</a></h3>
+							<h3><a href="#">Retaining Walls</a></h3>
 							<p>I never spend much time in school but I taught ladies plenty. It's true I hire my body out for pay, hey hey. I've gotten.</p>
 						</div>
 					</div>
@@ -112,10 +99,10 @@
 
 				<div class="four columns">
 					<div class="home-blog">
-						<img src="images/imgs/home_blog/home-blog03.jpg" />
+						<img id="irrigation"/>
 							
 						<div class="home-blog-post">
-							<h3><a href="#">Irrigation maintenance and test text</a></h3>
+							<h3><a href="#">Irrigation Maintenance</a></h3>
 							<p>I never spend much time in school but I taught ladies plenty. It's true I hire my body out for pay, hey hey. I've gotten.</p>
 						</div>
 					</div>
@@ -123,7 +110,7 @@
 
 				<div class="four columns">
 					<div class="home-blog">
-						<img src="images/imgs/home_blog/home-blog01.jpg" />
+						<img id="mulching" />
 							
 						<div class="home-blog-post">
 							<h3><a href="#">Mulching</a></h3>
@@ -134,7 +121,7 @@
 
 				<div class="four columns">
 					<div class="home-blog">
-						<img src="images/imgs/home_blog/home-blog04.jpg" />
+						<img id="tree"/>
 				
 						<div class="home-blog-post">
 							<h3><a href="#">Tree pruning or removal</a></h3>
@@ -145,7 +132,7 @@
 
 				<div class="four columns">
 					<div class="home-blog">
-						<img src="images/imgs/home_blog/home-blog02.jpg" />
+						<img id="storm"/>
 							
 						<div class="home-blog-post">
 							<h3><a href="#">Storm clean-up</a></h3>
@@ -156,7 +143,7 @@
 
 				<div class="four columns">
 					<div class="home-blog">
-						<img src="images/imgs/home_blog/home-blog03.jpg" />
+						<img id="aerating" />
 							
 						<div class="home-blog-post">
 							<h3><a href="#">Aerating and overseeding</a></h3>
