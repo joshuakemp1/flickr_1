@@ -4,6 +4,7 @@ window.location = $(this).find("option:selected").val();
 });
 
 
+$(document).ready(function(){
 setTimeout(function(){
 $(".alert").fadeOut("slow", function () {
 $(".alert").remove();
@@ -12,3 +13,4 @@ $(".alert").remove();
 }, 5000);
 });
 
+});
