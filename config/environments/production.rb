@@ -73,8 +73,8 @@ config.action_mailer.delivery_method = :smtp
   domain: "asciicasts.com",
   authentication: "plain",
   enable_starttls_auto: true,
-  user_name: "wellspringlawnandlandscape@gmail.com",
-  password: "wellspring"
+  user_name: ENV['EMAIL_USERNAME'],
+  password: ENV['EMAIL_PASSWORD']
 }
 
 end
