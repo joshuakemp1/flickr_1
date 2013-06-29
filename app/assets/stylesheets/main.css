@@ -72,6 +72,10 @@ input[type="submit"].submit:hover, .button:hover {
 	margin-bottom:20px;
 }
 
+.recent.mt20 {
+	margin-top:20px;
+}
+
 /* Boxed Layout Styles */
 .hidden {
 	display: none;
@@ -192,7 +196,7 @@ input[type="submit"].submit:hover, .button:hover {
 
 .recentWork {
 	text-align:justify;
-	font-size:1.3em;
+	font-size:1.6em;
 }
 
 hr.line.slogan {

@@ -33,12 +33,15 @@
 			</div>
 			
 			<div class="container">
-				<div class="four columns">
-					<h3 class="recent">Recent Work</h3>
-					<p class="recentWork">Hello, and Welcome to Wellspring Lawn and Landscape. We are a Locally owned and operated company based in the Fredericksburg Area. We service The city of Fredericksburg, Counties of Spotsylvania, Stafford and King George, specializing in turf care maintenance and Landscape Design and Install.</p>
+				<div class="sixteen columns">
+					<p class="recentWork">Welcome to Wellspring Lawn and Landscape. We are a Locally owned and operated company based in the Fredericksburg Area. We service The city of Fredericksburg, Counties of Spotsylvania, Stafford and King George, specializing in turf care maintenance and Landscape Design and Install.</p>
 					<p class="recentWork">Please take some time to view some of our more recent projects and don’t hesitate to call or email with all of your Lawn and Landscaping Needs.</p>
 					<button class="button">View Portfolio</button>
 				</div>
+			</div>
+
+			<div class="container">
+				<h3 class="recent">Recent Work</h3>
 				<% @latest.each do |l| %>
 				<div class="four columns">
 					<div class="our-work">
@@ -49,9 +52,10 @@
 					</div>
 				</div>
 				<% end %>
-				
-				
 			</div>
+				
+				
+			
 			
 			<div class="container">
 				<div class="sixteen columns mb20">
