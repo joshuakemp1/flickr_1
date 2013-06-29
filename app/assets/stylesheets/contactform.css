@@ -17,6 +17,7 @@ background: url('/assets/formmail.png') #fff no-repeat 5px;
 
 .help-inline {
 display: block;
+color:red;
 }
 
 #contactForm .contact{
