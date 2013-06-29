@@ -3,7 +3,7 @@ class ContactMailer < ActionMailer::Base
 
     def service_request(contact)
         @contact = contact
-        mail(to: contact.email, subject: "Service Request!")
+        mail(to: 'wellspringlawnandlandscape@gmail.com', subject: "Service Request!")
  
  end
 end
