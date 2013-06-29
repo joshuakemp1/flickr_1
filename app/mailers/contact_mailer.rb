@@ -1,9 +1,9 @@
 class ContactMailer < ActionMailer::Base
-     default to:  "wellspringlawnandlandscape@gmail.com"
+     default from:  "wellspringlawnandlandscape@gmail.com"
 
     def service_request(contact)
         @contact = contact
-      mail(from: contact.email, subject: "Service Request!")
+        mail(to: contact.email, subject: "Service Request!")
  
  end
 end

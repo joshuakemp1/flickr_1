@@ -1,14 +1,5 @@
 class ContactsController < ApplicationController
-  # GET /contacts/1
-  # GET /contacts/1.json
-  def show
-    @contact = Contact.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @contact }
-    end
-  end
+  
 
   # GET /contacts/new
   # GET /contacts/new.json
@@ -27,19 +18,11 @@ class ContactsController < ApplicationController
   # POST /contacts.json
   def create
     @contact = Contact.new(params[:contact])
-    
-    respond_to do |format|
-
-      if @contact.save
-       
-        
-        format.html { redirect_to @contact, notice: 'Wellspring service request sent! We will be in touch soon!' }
-        format.json { render json: @contact, status: :created, location: @contact }
-        ContactMailer.service_request(@contact).deliver
-      else
-        format.html { render action: "new" }
-        format.json { render json: @contact.errors, status: :unprocessable_entity }
-      end
+    if @contact.valid?
+      ContactMailer.service_request(@contact).deliver
+      redirect_to(root_path, :notice => "Thanks for getting in touch, we will get back to you soon")
+    else
+      render :new
     end
   end
  
