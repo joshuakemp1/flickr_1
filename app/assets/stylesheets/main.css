@@ -53,12 +53,6 @@ a {
 h2.post-title { margin: -8px 0 20px; line-height: 32px; }
 form { overflow: hidden; }
 
-input[type="text"], textarea {
-	border: 1px solid #e7e7e7;
-	background: #fcfcfc;
-	color: #909090;
-	font: 11px/17px 'OpenSansRegular';
-}
 
 input[type="submit"].submit, .button {
 	background: green;
@@ -305,28 +299,7 @@ hr.line.slogan {
 	font-family: 'OpenSansRegular';
 }
 
-/* contact form styles */
-#contact-form .contact-form label {
-	font-family: 'OpenSansRegular';
-	font-size: 11px;
-	font-weight: 100;
-}
-#contact-form .contact-form textarea {
-	width: 690px;
-}
-#contact-form .contact-form label {
-	margin-bottom: 5px;
-}
-#contact-form .contact-form p {
-	display: inline-block;
-	margin: 0 17px 0 0;
-}
-#contact-form .contact-form input[type="submit"] {
-	margin-bottom: 0;
-}
-.contact-header {
-	margin-bottom: 26px;
-}
+
 
 /* coments styles */
 .comments {

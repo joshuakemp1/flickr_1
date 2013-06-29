@@ -1,4 +1,5 @@
 <div class="container main">
+
 		<div id="slogan" class="clearfix">
 			<div class="sixteen columns">
 				<div class="slogan">
@@ -14,31 +15,79 @@
 		</div>
 		
 		<div id="page-content" class="full-width container">
-		
 			<div class="sixteen columns">
+			  <div id="googlemaps" class="google-map google-map-full" style="height:300px"></div>
+         <h3 class="gmap-header">Leave us a message</h3>
+      </div><!--/sixteen -->
+    </div>
+
+    <div class="container">
+      <div class="eight columns">
+
+				  <div id="contactForm">
+					 <%= form_for @contact, :class => 'form' do |f| %>
+  
+             <div class="control-group">
+               <%= f.label :name,  :class => 'control-label' %>
+              <div class="controls">
+               <%= f.text_field :name, :id => 'inputName', :class => 'name', :placeholder => 'Enter Name Here...' %>
+              <span class="help-inline" style="display: none;">Please fill your name</span>
+             </div>
+           </div>
+
+            <div class="control-group">
+              <%= f.label :email, :class => 'control-label' %>
+             <div class="controls">
+              <%= f.text_field :email, :id => 'inputEmail', :class => 'email', :placeholder => 'Enter Your E-mail Address...' %>
+               <span class="help-inline" style="display: none;">Please correct your email</span>
+             </div>
+            </div>
+
+            <div class="control-group">
+              <%= f.label :phone, 'Phone Number', :class => 'control-label' %>
+             <div class="controls">
+              <%= f.text_field :phone, :id => 'inputPhone', :class => 'phone', :placeholder => 'Enter Phone Number here' %>
+              <span class="help-inline" style="display: none;">Please Check Your Phone Number</span>
+             </div>
+            </div>
+
+            <div class="control-group">
+              <%= f.label :zip, 'Zip Number', :class => 'control-label' %>
+             <div class="controls">
+              <%= f.text_field :zip, :id => 'inputZip', :class => 'zip', :placeholder => 'Enter Zip Number here' %>
+              <span class="help-inline" style="display: none;">Please Check Your Zip Number</span>
+             </div>
+            </div>
+
+            
+
+          </div><!--/eight columns-->
+        </div>
+
+           <div class="eight columns">
+
+            <div class="control-group">   
+              <%= f.label :message, :class => 'control-label' %>
+               <div class="controls">
+                <%= f.text_area :request, :id => 'textarea', :class => 'message', :rows => 10 %>
+                 <span class="help-inline" style="display: none;">Please Enter a Message</span>
+               </div>
+            </div>
+
+             <div class="actions">
+              <%= f.submit "Send Message" %>
+             </div>
+  
+         <% end %>
+
+         	</div><!--/contact form -->
+				</div><!--eight columns-->
+			</div><!--/container -->
 			
-			<!-- Google Maps -->
-			<div id="googlemaps" class="google-map google-map-full" style="height:300px"></div>
 
-				
-				<h3 class="gmap-header">Leave us a message</h3>
-				
-				<div id="contact-form">
-					<form class="contact-form">
-						<p><label for="name">Name (required)</label><input type="text" name="name" id="name"></p>
-						<p><label for="email">Email (required)</label><input type="text" name="email" id="email"></p>
-						<p style="margin-right:0;"><label for="website">Website (optional)</label><input type="text" name="website" id="website"></p>
-						<p style="margin-right:0;"><label for="textarea">Message (required)</label><textarea rows="10" cols="55" name="message" id="textarea"></textarea></p>
-						<p style="float:right; margin-right:0;"><input class="submit" type="submit" value="Send Mail"></p>
-					</form>
-				</div>
-
-			</div>
-			
-
-		</div>
+</div><!-- main container -->
 		
-	</div>
+
 
 <script type="text/javascript"
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApUO4ajt4kh5KnLE-zJbdmDKrVf7zqsvA&sensor=false">

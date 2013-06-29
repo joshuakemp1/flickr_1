@@ -199,7 +199,7 @@
 	textarea,
 	select {
 		border: 1px solid #ccc;
-		padding: 6px 4px;
+		padding: 6px 36px;
 		outline: none;
 		-moz-border-radius: 2px;
 		-webkit-border-radius: 2px;
@@ -207,11 +207,9 @@
 		font: 13px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 		color: #777;
 		margin: 0;
-		width: 210px;
-		max-width: 100%;
 		display: block;
 		margin-bottom: 20px;
-		background: #fff; }
+		 }
 	select {
 		padding: 0; }
 	input[type="text"]:focus,
@@ -228,8 +226,10 @@
 	label,
 	legend {
 		display: block;
-		font-weight: bold;
-		font-size: 13px;  }
+		font-size: 13px; 
+		margin-bottom:5px;
+   }
+   
 	select {
 		width: 220px; }
 	input[type="checkbox"] {
