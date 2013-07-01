@@ -42,7 +42,9 @@ Practice1::Application.configure do
   domain: "gmail.com",
   authentication: "plain",
   enable_starttls_auto: true,
-  user_name: 'wellspringlawnandlandscape@gmail.com',
-  password: 'wellspring'
+  user_name: '#',
+  password: '#'
 }
 end
+
+# Dont forget to add username and password to test mailer in development, comment out before pushing bak to github
