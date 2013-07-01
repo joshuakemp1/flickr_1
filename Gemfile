@@ -15,8 +15,8 @@ gem 'jquery-rails'
 gem "flickraw", "~> 0.9.6"
 
 #gem to allow running on ubuntu server
-#gem 'therubyracer'
-#gem 'heroku'
+gem 'therubyracer'
+gem 'heroku'
 
 
 
