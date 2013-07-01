@@ -1,21 +1,19 @@
-<br></br>
-<h1>Recent Work!</h1>
-<div class="photo-align">
-<% i = 0 %>
-
-<%  until i == @length do %>
-<%= image_tag(@photo[i], :alt => @photo)%>
-<%  i +=1 end %>
+<div class="container ">
+	<h3 class="recent mt20">Our Portfolio</h3>
+	<% @portfolio.each do |l| %>
+		<div class="four columns">
+			<div class="our-work">
+				<%= link_to (l.url_large), :class => 'fancybox', :rel => 'group' do %>
+  <%= image_tag(l.url_large, size: '220x220') %>
+<% end %>
+						<h3><%= truncate(l.title, :length => 20) %></h3>
+					 </div>
+			</div>
+	<% end %>
 </div>
 
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-40974006-1', 'wellspringlawn.com');
-  ga('send', 'pageview');
-
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
 </script>
